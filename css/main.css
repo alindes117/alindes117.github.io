@@ -450,12 +450,12 @@ body.home main {
     body.home main figure:first-child {
       opacity: 1; }
 
-body.exercises ul, body.exercises li {
+body.exercises #exercises ul, body.exercises #exercises li {
   list-style: none;
   margin: 0;
   padding: 0; }
-body.exercises li {
+body.exercises #exercises li {
   margin-bottom: 15px; }
-  body.exercises li a {
-    color: #444444;
-    text-decoration: none; }
+body.exercises #exercises a {
+  color: #444444;
+  text-decoration: none; }
