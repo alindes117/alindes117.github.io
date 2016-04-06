@@ -413,6 +413,10 @@ body {
     .site-header #logo h1 {
       font-size: 24px;
       font-weight: 700; }
+      .site-header #logo h1 span {
+        display: block;
+        font-size: 14px;
+        font-weight: 400; }
   .site-header hr {
     border-top: 4px solid #444444;
     margin: 20px auto 50px auto;
