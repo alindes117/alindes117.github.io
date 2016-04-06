@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
@@ -56,10 +57,18 @@
     <div class="page-content">
       <div class="wrapper">
         <div class="home">
+=======
+---
+layout: default
+---
+
+<div class="home">
+>>>>>>> 2f2922da499688c3b6048bb12a40f9c814bdd069
 
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
+<<<<<<< HEAD
     
       <li>
         <span class="post-meta">Apr 6, 2016</span>
@@ -126,3 +135,19 @@
   </body>
 
 </html>
+=======
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
+>>>>>>> 2f2922da499688c3b6048bb12a40f9c814bdd069
