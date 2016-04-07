@@ -461,6 +461,15 @@ body.home .site-header {
   width: 100%; }
   body.home .site-header.active {
     width: 25%; }
+    body.home .site-header.active .header-inner {
+      opacity: 1; }
+  body.home .site-header .header-inner {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    transition-delay: 1s; }
 body.home .wrapper {
   padding: 0px; }
 body.home figure {

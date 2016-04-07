@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     setTimeout(function() {
         $('.site-header').addClass('active');
-    }, 1000);
+    }, 750);
 });
 
 $(window).resize(function() {
