@@ -404,6 +404,7 @@ body {
 .wrapper {
   height: 100%;
   padding: 50px;
+  position: relative;
   vertical-align: middle;
   width: 100%; }
 
