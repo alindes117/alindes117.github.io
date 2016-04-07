@@ -463,3 +463,10 @@ body.exercises #exercises li {
 body.exercises #exercises a {
   color: #444444;
   text-decoration: none; }
+
+body.blog article {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 50px;
+  padding-bottom: 50px; }
+  body.blog article img.bordered {
+    border: 1px solid #e1e1e1; }
