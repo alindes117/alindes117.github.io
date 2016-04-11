@@ -452,6 +452,9 @@ body {
     -ms-transform: translateY(25%);
     transform: translateY(25%); }
 
+@media (max-width: 991px) {
+  .page-content {
+    margin-left: 250px; } }
 body.home .site-header {
   border-right: 0px;
   -webkit-transition: width 1s;

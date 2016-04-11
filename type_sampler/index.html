@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<title>Type Sampler</title>
+
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<style>
+	@font-face {
+	    font-family: 'sophiaregular';
+	    src: url('fonts/sophia-webfont.eot');
+	    src: url('fonts/sophia-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/sophia-webfont.woff2') format('woff2'),
+	         url('fonts/sophia-webfont.woff') format('woff'),
+	         url('fonts/sophia-webfont.ttf') format('truetype'),
+	         url('fonts/sophia-webfont.svg#sophiaregular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
+
+	}
+
+	h1 {
+		font-family: Helvetica, sans-serif;
+	}
+
+	p {
+		font-family: 'Lobster';
+	}
+
+	h3 {
+		font-family: 'sophiaregular';
+	}
+</style>
+</head>
+
+<body>
+<header>
+	<img alt="Typography Text" src="images/typography_text.gif"/>
+</header>
+
+<h1>Typography Sampler</h1>
+
+<p>Typography is the primary way we, as designers, communicate with our audience. the web has unique rules and some limitations for integrating type styles into html pages. In this exercise we'll explore the intersection of Typeography and CSS.</p>
+ 
+<h3>Type As Image</h3>
+
+<p>Using an image for some very specialized fonts is OK! It's a simple process and has the distinct advantage of being very reliable. The downside is that it adds file size and is not accessible. Be sure to include alt tags to describe your images and don't use an image for body copy.</p>
+
+<h3>System Fonts</h3>
+
+<p>System fonts have the davantage of being reliable and predictable. They will appear similarly on most user systems and browsers. Be sure to include optional font families so that it will degrade gracefully if your fist font is not available on a user's system. the reliability of system fonts also results in a limited set of available fonts.</p>
+
+<h3>External Fonts</h3>
+
+<p>The demand for more font variety in web design resulted in the introduction of external fonts. External fonts are stored on a remote servers and linked to your page through code in your head tag and in css. Google fonts is a free and offers an ever expanding font selection. Just search for google web fonts and you'll go to a page where you can see available fonts, pick a style you like and download the link (with instructions for applying you your site. This seems like a perfect fix but what if the google server is down or the font's are slow-loading due to user bandwidth?</p>
+
+<h3>@font-face</h3>
+<p>Those wonderful minds developing CSS3 came up with a coding option that allows us to download some type styles, upload onto our web server and then specify it in the code so that the user can view that specific font. The user is actually downloading the font without knowing it! This has lots of potential but there are copyright issues and this technique tends to make much larger page sizes. Do you have the rights to use this font?...just asking.</p>
+
+
+<h3>One More Coding Thing</h3>
+<p>If you've been reading the book and tutorial you may have seen the term "class". A class is a predefined css style that can be applied many times within a page. For example, we can write a class named redtype and give it  a declaration of color: red;. We can then place the class name .redtype in the html code to specify where it is changing the text properties. This is especially powerful when you want to make a consistent style across many pages. </p>
+</body>
+
+</html>
+
+<!--A class is a style that can be used multiple times on a page. You can also use it with the <span> tag to target a word or words within a sentance. <span class=redtext>typography</span>
+
+The syntax for an embedded style is: 
+
+p {
+	font-family: verdana; color: red; font-size: 24px;
+}	
+
+The syntax for and embedded class named highlight is
+
+.highlight  {
+	color: yellow;
+	}
+	
+so you want to add a rule or an interesting border style to your page. you can do this by creating a class that specifies the look you want 
+
+.dotted_rule  { 
+ 	border-bottom-width: medium;
+	border-bottom-style: dotted;
+	border-bottom-color: #000
+	
+	Font options:
+	Image for font-sometimes an image is the best and most reliable option but
+	not as accessable (use alt) and do not use for body copy.
+	Built-in fonts-limited styles but very reliable, use alt fonts for degredation
+	Link to font services like Google fonts-slower loading, must be online to view
+	@font-face-you upload fonts to use on your server space and link to them with css 				      (limited font styles but growing)
+	
+	
+	Try Google fonts!?
+	http://www.google.com/webfonts
+	Just pick a font and follow the instructions. You will add a style in the head tag and an embedded or inline rule that specifies where you want place that font. Have fun!
+	
+	@fontface is a new css5 rule that allows us to use fonts that we upload to the server.
+	
+	@font-face {
+	font-family: FontName;
+	src: url(fonts/FontName.otf);
+	font-weight:normal;
+	}
+	
+	You will have to specifiy the font as a style in your css code for example:
+	h1 {font-family: "fonts/FontName", verdana, san-serif;
+	}
+	-->

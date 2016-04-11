@@ -16,5 +16,5 @@ $(window).resize(function() {
 
 function resizeMain() {
     var height = $(window).height();
-    $('.wrapper').css('height', height);
+    $('.wrapper').css('min-height', height);
 }
