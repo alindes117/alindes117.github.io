@@ -623,3 +623,60 @@ body.type-hierarchy {
     font-size: 6.6vw; }
     body.type-hierarchy .unemployed-text span {
       color: #e53935; }
+
+body.sushi-101 {
+  opacity: 1; }
+  body.sushi-101 .container {
+    background-image: url("../img/sushi_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 900px;
+    margin: 0 auto;
+    position: relative;
+    width: 1000px; }
+  body.sushi-101 h1 {
+    border-bottom: 4px solid green;
+    color: #bf3319;
+    display: inline-block;
+    font-family: verdana;
+    font-size: 50px;
+    font-weight: 400;
+    position: absolute;
+    right: 0px;
+    top: 50px; }
+  body.sushi-101 article {
+    position: absolute; }
+    body.sushi-101 article p {
+      margin: 0px; }
+    body.sushi-101 article#rice, body.sushi-101 article#surimi, body.sushi-101 article#sesame {
+      border-left: 1px solid #000;
+      border-top: 1px solid #000;
+      padding: 15px 100px 15px 15px; }
+    body.sushi-101 article#nori, body.sushi-101 article#avacado {
+      border-right: 1px solid #000;
+      border-top: 1px solid #000;
+      padding: 15px 15px 15px 100px;
+      text-align: right; }
+    body.sushi-101 article#rice {
+      left: 60px;
+      top: 225px;
+      width: 500px; }
+    body.sushi-101 article#surimi {
+      left: -15px;
+      top: 405px;
+      width: 415px; }
+    body.sushi-101 article#sesame {
+      left: -9px;
+      top: 528px;
+      width: 375px; }
+    body.sushi-101 article#nori {
+      padding-left: 350px;
+      right: -190px;
+      top: 375px;
+      width: 665px; }
+    body.sushi-101 article#avacado {
+      padding-left: 150px;
+      right: -140px;
+      top: 470px;
+      width: 440px; }
