@@ -516,3 +516,110 @@ body.blog article {
 
 body.sketches .wrapper img {
   max-width: 800px; }
+
+body.type-hierarchy {
+  font-family: 'Montserrat';
+  opacity: 1;
+  padding: 25px; }
+  body.type-hierarchy main {
+    background: #232526;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #232526, #414345);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #232526, #414345);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 50px;
+    position: relative; }
+  body.type-hierarchy h1, body.type-hierarchy h2, body.type-hierarchy h3, body.type-hierarchy h4, body.type-hierarchy h5, body.type-hierarchy h6 {
+    font-weight: 700;
+    margin: 0px; }
+  body.type-hierarchy span {
+    display: inline-block; }
+  body.type-hierarchy .bgclip {
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important; }
+  body.type-hierarchy .stop {
+    background: #e43a15;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #e43a15, #e65245);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #e43a15, #e65245);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: 10vw;
+    letter-spacing: 1vw; }
+  body.type-hierarchy .outsourcing {
+    color: #f5f5f5;
+    font-size: 10vw;
+    text-decoration: line-through; }
+  body.type-hierarchy .cheap-labor {
+    color: #666666;
+    font-size: 7vw;
+    margin: 20px 0px; }
+    body.type-hierarchy .cheap-labor span {
+      background: #e43a15;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #e43a15, #e65245);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #e43a15, #e65245);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #ffffff;
+      padding: 15px; }
+  body.type-hierarchy .cheap-results {
+    color: #666666;
+    font-size: 10vw; }
+    body.type-hierarchy .cheap-results span {
+      background: #e43a15;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to left, #e43a15, #e65245);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to left, #e43a15, #e65245);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: #ffffff;
+      padding: 15px; }
+  body.type-hierarchy .millenial-count {
+    background: #fe8c00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #fe8c00, #f83600);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #fe8c00, #f83600);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-bottom: 25px solid #f83600;
+    border-top: 25px solid #f83600;
+    font-size: 12vw;
+    letter-spacing: 6px;
+    line-height: 10vw;
+    margin: 50px 0px;
+    padding: 10px 0px;
+    position: relative; }
+    body.type-hierarchy .millenial-count span {
+      color: #fe8c00;
+      -webkit-text-fill-color: #fe8c00 !important;
+      font-size: 5.2vw;
+      letter-spacing: 0px;
+      line-height: 65px;
+      position: absolute;
+      right: -122px;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      top: 142px; }
+  body.type-hierarchy .forty-percent {
+    color: #f5f5f5;
+    font-size: 4vw;
+    letter-spacing: -0.25vw; }
+  body.type-hierarchy .four-six {
+    background: #e53935;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #e53935, #e35d5b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #e53935, #e35d5b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #f5f5f5;
+    font-size: 14vw;
+    margin: 50px 0px 25px 0px;
+    padding: 25px; }
+  body.type-hierarchy .unemployed-text {
+    color: #666666;
+    font-size: 6.6vw; }
+    body.type-hierarchy .unemployed-text span {
+      color: #e53935; }
