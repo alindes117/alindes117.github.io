@@ -493,13 +493,17 @@ body.home figure {
   body.home figure:first-child {
     opacity: 1; }
 
-body.exercises #exercises ul, body.exercises #exercises li {
+body.connect-it ul, body.connect-it li,
+body.exercises ul,
+body.exercises li {
   list-style: none;
   margin: 0;
   padding: 0; }
-body.exercises #exercises li {
+body.connect-it li,
+body.exercises li {
   margin-bottom: 15px; }
-body.exercises #exercises a {
+body.connect-it a,
+body.exercises a {
   color: #444444;
   text-decoration: none; }
 
@@ -509,3 +513,6 @@ body.blog article {
   padding-bottom: 50px; }
   body.blog article img.bordered {
     border: 1px solid #e1e1e1; }
+
+body.sketches .wrapper img {
+  max-width: 800px; }
