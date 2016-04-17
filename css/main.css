@@ -511,11 +511,19 @@ body.blog article {
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 50px;
   padding-bottom: 50px; }
+  body.blog article img {
+    width: 100%; }
   body.blog article img.bordered {
     border: 1px solid #e1e1e1; }
 
 body.sketches .wrapper img {
   max-width: 800px; }
+
+body.mockups .wrapper img {
+  border: 1px solid #e1e1e1;
+  max-width: 1000px; }
+  body.mockups .wrapper img:first-child {
+    margin-bottom: 50px; }
 
 body.type-hierarchy {
   font-family: 'Montserrat';
