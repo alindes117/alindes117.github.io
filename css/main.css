@@ -688,3 +688,57 @@ body.sushi-101 {
       right: -140px;
       top: 470px;
       width: 440px; }
+
+body.real-simple {
+  font-family: 'Roboto Slab';
+  font-weight: 400;
+  opacity: 1; }
+  body.real-simple figure {
+    margin: 0; }
+  body.real-simple h2, body.real-simple h3 {
+    margin: 0; }
+  body.real-simple .container {
+    margin: 0 auto;
+    width: 563px; }
+  body.real-simple .blue1 {
+    color: #617f9e; }
+  body.real-simple #curvesSteel article {
+    display: inline-block;
+    line-height: 18px;
+    margin-right: 20px;
+    text-align: right;
+    width: 215px; }
+  body.real-simple #curvesSteel figure {
+    display: inline-block; }
+    body.real-simple #curvesSteel figure img {
+      border: 8px solid #666666; }
+  body.real-simple h3 {
+    font-size: 16px;
+    font-weight: 300; }
+  body.real-simple p {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0; }
+  body.real-simple h2 {
+    font-weight: 300; }
+  body.real-simple #miniTitle {
+    margin: 5px 0px;
+    text-align: right; }
+  body.real-simple #steps {
+    margin-left: -72px;
+    margin-top: 15px; }
+    body.real-simple #steps img {
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      border: 2px solid #9fd0fc; }
+    body.real-simple #steps article {
+      display: inline-block;
+      margin-left: 42px;
+      vertical-align: top;
+      width: 167px; }
+      body.real-simple #steps article img {
+        width: 100%; }
+      body.real-simple #steps article h2 {
+        color: #617f9e;
+        font-size: 16px; }
