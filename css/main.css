@@ -725,7 +725,6 @@ body.real-simple {
     margin: 5px 0px;
     text-align: right; }
   body.real-simple #steps {
-    margin-left: -72px;
     margin-top: 15px; }
     body.real-simple #steps img {
       -webkit-border-radius: 3px;
@@ -734,7 +733,7 @@ body.real-simple {
       border: 2px solid #9fd0fc; }
     body.real-simple #steps article {
       display: inline-block;
-      margin-left: 42px;
+      margin-left: 27px;
       vertical-align: top;
       width: 167px; }
       body.real-simple #steps article img {
@@ -742,3 +741,5 @@ body.real-simple {
       body.real-simple #steps article h2 {
         color: #617f9e;
         font-size: 16px; }
+      body.real-simple #steps article:first-child {
+        margin-left: 0px; }
