@@ -564,6 +564,7 @@ section#about {
     width: 100%; }
     section#about .about-cont > div {
       display: table-cell;
+      max-width: 650px;
       width: 50%;
       vertical-align: middle; }
     section#about .about-cont .section-title {
