@@ -3,32 +3,10 @@ $(document).ready(function() {
         $('body').addClass('active');
     }, 500);
 
+    windowScroll();
+
     $(window).scroll(function() {
-        changeNavLinks();
-
-        scrollTop = $(window).scrollTop();
-        var aboutPos = $('#about').offset().top;
-        var diff = aboutPos - scrollTop;
-
-        if(scrollTop > 100 && scrollTop < 150) {
-            $('#navbar').addClass('active-oov');
-        }
-
-        if(scrollTop == 0) {
-            $('#navbar').removeClass('active-oov active');
-        }
-
-        if(diff > 0 && diff <= 100) {
-            $('#navbar').addClass('active').removeClass('active-oov');
-        }
-
-        if(diff >= 10) {
-            $('#hero .bg').css({
-                '-webkit-transform': 'translateY(' + (scrollTop/3).toFixed(2) + 'px)',
-                '-moz-transform': 'translateY(' + (scrollTop/3).toFixed(2) + 'px)',
-                'transform': 'translateY(' + (scrollTop/3).toFixed(2) + 'px)'
-            });
-        }
+        windowScroll();
     });
 
     $('.form .form-control').on('change', function() {
@@ -54,7 +32,7 @@ $(document).ready(function() {
     });
 });
 
-function changeNavLinks() {
+function windowScroll() {
     var scrollTop = $(window).scrollTop();
     
     $('#navbar nav a:not(.btn)').each(function() {
@@ -70,6 +48,29 @@ function changeNavLinks() {
             currLink.removeClass("active");
         }
     });
+
+    var aboutPos = $('#about').offset().top;
+    var diff = aboutPos - scrollTop;
+
+    if(scrollTop > 100 && scrollTop < 150) {
+        $('#navbar').addClass('active-oov');
+    }
+
+    if(scrollTop == 0) {
+        $('#navbar').removeClass('active-oov active');
+    }
+
+    if(diff <= 100) {
+        $('#navbar').addClass('active').removeClass('active-oov');
+    }
+
+    if(diff >= 10) {
+        $('#hero .bg').css({
+            '-webkit-transform': 'translateY(' + (scrollTop/3).toFixed(2) + 'px)',
+            '-moz-transform': 'translateY(' + (scrollTop/3).toFixed(2) + 'px)',
+            'transform': 'translateY(' + (scrollTop/3).toFixed(2) + 'px)'
+        });
+    }
 }
 
 function postForm() {
