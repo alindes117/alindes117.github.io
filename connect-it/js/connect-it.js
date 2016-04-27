@@ -85,16 +85,10 @@ function postForm() {
             dataType: "xml",
             statusCode: {
                 0: function (){
-                    $('#name').val("");
-                    $('#email').val("");
-                    $('#message').val("");
                     //Success message
                     alert('Thanks for contacting us, we\'ll get back to you within 24 hours.');
                 },
                 200: function (){
-                    $('#name').val("");
-                    $('#email').val("");
-                    $('#message').val("");
                     //Success Message
                     alert('Thanks for contacting us, we\'ll get back to you within 24 hours.');
                 }

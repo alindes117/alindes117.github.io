@@ -16,6 +16,33 @@
                 $('body').addClass('active');
             }, 500);
         });
+
+        function postForm() {
+            var email = $('#email').val();
+
+            if ((email !== "")) {
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/1Vl7YG8-gAYGAcrrwmLrg9DhlJVtNdcfXEh1TblF-Pdg/formResponse",
+                    data: {"entry.1380666677":email},
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function (){
+                            //Success message
+                            alert('Thanks for pre-ordering, please check your inbox for a confirmation email.');
+                        },
+                        200: function (){
+                            //Success Message
+                            alert('Thanks for pre-ordering, please check your inbox for a confirmation email.');
+                        }
+                    }
+                });
+            }
+            else {
+                //Error message
+                alert('Please fill in all fields.');
+            }
+        }
     </script>
 </head>
 <body class="pre-order">
@@ -28,10 +55,10 @@
                         <p>With a Wreft pre-order, you can upload your own tattoo design or pick from thousands of designs from the community.</p>
                         <p>We hope you're just as excited as we are about Wreft!</p>
                         <hr>
-                        <form>
+                        <form action="javascript: postForm()">
                             <div class="form-group">
                                 <label for="email">YOUR EMAIL</label>
-                                <input class="form-control" id="email" name="email" type="text">
+                                <input class="form-control" id="email" name="entry.1380666677" type="text">
                             </div>
                             <div class="form-group">
                                 <input class="btn btn-primary" type="submit" value="PRE-ORDER">
