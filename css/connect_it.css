@@ -681,6 +681,9 @@ section#tattoo {
 section#app {
   background: #fafafa;
   padding: 100px 0px 200px 0px; }
+  section#app .container {
+    min-width: 1000px;
+    width: 1000px; }
   section#app .section-title {
     text-align: center; }
     section#app .section-title h1 span {
@@ -698,8 +701,20 @@ section#app {
       margin: -0.5px 0px 0px -400px;
       top: 50%;
       width: 800px; }
-  section#app img {
+  section#app .wrapper {
+    display: table;
+    height: 100%;
+    width: 100%; }
+    section#app .wrapper > div {
+      display: table-cell;
+      vertical-align: middle; }
+  section#app .mobile-app {
     width: 400px; }
+    section#app .mobile-app img {
+      width: 400px; }
+  section#app .content {
+    padding-left: 100px;
+    width: 450px; }
 section#contact {
   padding: 100px 0px; }
   section#contact .section-title {
