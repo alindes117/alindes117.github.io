@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Andy Lin - Connect-It! Final</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/connect_it.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/connect-it.js" type="text/javascript"></script>
+</head>
+<body>
+    <header id="navbar">
+        <div class="container">
+            <a class="ocs" href="#hero" id="logo"><img alt="WREFT Logo" src="img/logo.png" title="WREFT"></a>
+            <nav>
+                <a class="ocs" href="#about">ABOUT US</a>
+                <a class="ocs" href="#tattoo">THE TATTOO</a>
+                <a class="ocs" href="#app">THE APP</a>
+                <a class="ocs" href="#contact">CONTACT US</a>
+                <a class="btn btn-secondary" href="/connect-it/pre-order">PRE-ORDER</a>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <section id="hero">
+            <div class="container">
+                <h1>Smart, Removable, Embedded Tracking Device</h1>
+                <h4>We'll watch your health so you can focus on other important things.</h4>
+                <a class="ocs btn btn-primary" href="#about"><i class="fa fa-arrow-down"></i><span>LEARN MORE</span></a>
+                <img src="img/hand_model.png">
+            </div>
+            <div class="bg"></div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="about-cont">
+                    <div class="image">
+                        <img alt="About image" src="img/about_image.jpg" title="About Wreft">
+                    </div>
+                    <div class="about-info">
+                        <div class="section-title">
+                            <h1><span>ABOUT US</span></h1>
+                            <hr>
+                        </div>
+                        <p>Wreft transforms fitness tracking and health monitoring into a removable, non-distracting, customizable tech tattoo. We wanted a product that would track more than just your heart rate or the number of steps you take.</p>
+                        <p>Getting up and going for a run is great, but how about keeping track of your water and nutrition intake, sugar levels, or blood pressure without the need of an extra device? We hope Wreft's advanced tracking system will allow a more convenient way for people to monitor their health.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tattoo">
+            <div class="wrapper clearfix">
+                <div class="info">
+                    <div class="section-title">
+                        <h1><span>THE TATTOO</span></h1>
+                        <hr>
+                    </div>
+                    <p>Our removable tattoo uses the same method as a temporary tattoo. Lay it against your wrist, apply water, and you’re connected.</p>
+                    <p>The tattoo will glow a certain <strong>color</strong> to indicate what your body is lacking:</p>
+                    <ul>
+                        <li>
+                            <span class="circle water"></span>
+                            <div>
+                                <strong>Hydration Level</strong>
+                                <p>Our body consists of about 60% water and in order to stay hydrated our need to drink at least 8 glasses of water.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="circle nutrition"></span>
+                            <div>
+                                <strong>Nutrition Intake</strong>
+                                <p>In addition to proteins and carbohydrates, our body needs to ingest fibres, vitamins, and minerals.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="circle exercise"></span>
+                            <div>
+                                <strong>Daily Exercise</strong>
+                                <p>To maintain a healthy body, we need to do any type of physical activity for at least 30 minutes a day.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="image">
+                </div>
+            </div>
+        </section>
+        <section id="app">
+            <div class="container">
+                <div class="section-title">
+                    <h1><span>THE APP</span></h1>
+                    <hr>
+                </div>
+                <div class="mobile-app">
+                    <img src="img/iphone_screen.png">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h1><span>CONTACT US</span></h1>
+                    <hr>
+                </div>
+                <div class="form">
+                    <form action="javascript: postForm()" method="POST">
+                        <div class="form-inline clearfix">
+                            <div class="form-group">
+                                <label for="name">FULL NAME</label>
+                                <input class="form-control" id="name" name="entry.1927661432" placeholder="FULL NAME" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">EMAIL</label>
+                                <input class="form-control" id="email" name="entry.1380666677" placeholder="EMAIL" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">MESSAGE</label>
+                            <textarea class="form-control" id="message" name="entry.146993475" placeholder="MESSAGE"></textarea>
+                        </div>
+                        <div class="form-group submit">
+                            <input class="btn btn-primary" type="submit" value="SUBMIT">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="preOrder">
+            <div class="container">
+                <span>Pre-order to create your own custom design!</span>
+                <a class="btn btn-white" href="/connect-it/pre-order">PRE-ORDER</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; Wreft 2016. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
