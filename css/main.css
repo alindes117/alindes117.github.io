@@ -495,15 +495,19 @@ body.home figure {
 
 body.connect-it ul, body.connect-it li,
 body.exercises ul,
-body.exercises li {
+body.exercises li,
+body.project ul,
+body.project li {
   list-style: none;
   margin: 0;
   padding: 0; }
 body.connect-it li,
-body.exercises li {
+body.exercises li,
+body.project li {
   margin-bottom: 15px; }
 body.connect-it a,
-body.exercises a {
+body.exercises a,
+body.project a {
   color: #444444;
   text-decoration: none; }
 
