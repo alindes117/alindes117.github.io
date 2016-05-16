@@ -373,6 +373,9 @@ body {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  left: 200px;
+  position: fixed;
+  bottom: 0;
   width: 200px; }
 
 .box2 {
@@ -389,9 +392,10 @@ body {
   -webkit-transform-origin: 50% 100%;
   /* Chrome, Safari, Opera */ }
 
-.container {
-  margin-top: 100px;
-  position: relative;
+.wrapper {
+  padding-top: 100px;
+  padding-left: 100px;
+  height: 100%;
   -webkit-perspective: 1500;
   -moz-perspective: 1500;
   -ms-perspective: 1500;
@@ -399,4 +403,5 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+  position: absolute; }
