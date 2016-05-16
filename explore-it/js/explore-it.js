@@ -11,8 +11,8 @@ $(document).ready(function() {
         } else {
             $('.box2').css({
                 '-webkit-transition': 'transform 0s',
-                '-webkit-transform': 'rotate(' + e.dy + 'deg)',
-                'transform': 'rotate(' + e.dy + 'deg)'
+                '-webkit-transform': 'rotate(' + (e.dy/2) + 'deg)',
+                'transform': 'rotate(' + (e.dy/2) + 'deg)'
             });
         }
     });

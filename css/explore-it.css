@@ -376,8 +376,10 @@ body {
   width: 200px; }
 
 .box2 {
-  background: #999999;
-  height: 200px;
+  border-top: 200px solid #999999;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  height: 0;
   position: absolute;
   left: 300px;
   -webkit-user-select: none;
@@ -385,7 +387,9 @@ body {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  width: 200px; }
+  width: 0;
+  -webkit-transform-origin: 50% 100%;
+  /* Chrome, Safari, Opera */ }
 
 .container {
   height: 800px;
