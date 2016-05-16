@@ -374,6 +374,10 @@ body {
   height: 800px;
   margin-top: 300px;
   position: relative;
+  -webkit-perspective: 1500;
+  -moz-perspective: 1500;
+  -ms-perspective: 1500;
+  -o-perspective: 1500;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
