@@ -368,6 +368,11 @@ body {
   background: #999999;
   height: 200px;
   position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
   width: 200px; }
 
 .container {
