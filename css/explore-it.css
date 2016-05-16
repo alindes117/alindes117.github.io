@@ -364,10 +364,22 @@ body {
   font-size: 14px;
   font-weight: 400; }
 
-.box {
+.box1 {
   background: #999999;
   height: 200px;
   position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  width: 200px; }
+
+.box2 {
+  background: #999999;
+  height: 200px;
+  position: absolute;
+  left: 300px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

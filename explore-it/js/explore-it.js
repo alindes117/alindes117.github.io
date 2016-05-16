@@ -1,15 +1,11 @@
 $(document).ready(function() {
-    $('.box').on('click', function() {
-        console.log('click');
-    });
-
-    $('.box').on('drag', function(e) {
+    $('.box1').on('drag', function(e) {
         if(e.end) {
-            $('.box').animate({
+            $('.box2').animate({
                 'top': 0
             },500);
         } else {
-            $('.box').css({
+            $('.box2').css({
                 'top': e.dy
             });
         }
