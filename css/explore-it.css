@@ -371,6 +371,9 @@ body {
   width: 200px; }
 
 .container {
+  height: 800px;
+  margin-top: 300px;
+  position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
