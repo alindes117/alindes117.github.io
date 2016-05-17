@@ -353,16 +353,77 @@ td,
 th {
   padding: 0; }
 
+@keyframes spinPropellers {
+  from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+@keyframes animatePlane {
+  from {
+    transform: rotate(0deg) translateX(8px) rotate(0deg); }
+  to {
+    transform: rotate(360deg) translateX(8px) rotate(-360deg); } }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
+  background: #18b2fa;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #18b2fa 0%, #8aedfd 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #18b2fa 0%, #8aedfd 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #18b2fa 0%, #8aedfd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18b2fa', endColorstr='#8aedfd',GradientType=0 );
+  /* IE6-9 */
   font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 1em;
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400;
+  height: 100vh;
+  width: 100vw; }
+
+h1, h2, h3, h4 {
+  margin: 0; }
+
+.Lobsterer {
+  font-family: 'Lobster'; }
+
+.wrapper {
+  height: 100vh;
+  text-align: center;
+  width: 100vw; }
+
+.plane-wrapper {
+  left: 50%;
+  margin-left: -245px;
+  position: absolute; }
+
+#plane {
+  -webkit-animation: animatePlane linear 5s infinite;
+  -moz-animation: animatePlane linear 5s infinite;
+  -o-animation: animatePlane linear 5s infinite;
+  animation: animatePlane linear 5s infinite;
+  position: absolute;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+  #plane #propellers {
+    -webkit-animation: spinPropellers linear 0.1s infinite;
+    -moz-animation: spinPropellers linear 0.1s infinite;
+    -o-animation: spinPropellers linear 0.1s infinite;
+    animation: spinPropellers linear 0.1s infinite;
+    position: absolute;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%; }
 
 .box1 {
   background: #999999;
@@ -392,7 +453,7 @@ body {
   -webkit-transform-origin: 50% 100%;
   /* Chrome, Safari, Opera */ }
 
-.wrapper {
+.wrapper2 {
   padding-top: 100px;
   padding-left: 100px;
   height: 100%;
