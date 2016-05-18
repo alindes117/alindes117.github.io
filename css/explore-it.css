@@ -383,7 +383,7 @@ body {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#18b2fa', endColorstr='#8aedfd',GradientType=0 );
   /* IE6-9 */
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'Josefin Sans', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 1em;
   font-size: 14px;
   font-weight: 400;
@@ -393,20 +393,36 @@ body {
 h1, h2, h3, h4 {
   margin: 0; }
 
-.Lobsterer {
+.lobster {
   font-family: 'Lobster'; }
 
-.wrapper {
+.home .wrapper {
   height: 100vh;
   text-align: center;
   width: 100vw; }
-
-.plane-wrapper {
+.home .content {
+  display: block;
+  height: 100vh;
+  width: 100vw; }
+.home .inner {
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  top: 15vh;
+  width: 100vw; }
+  .home .inner h2 {
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 400; }
+  .home .inner h1 {
+    font-size: 72px;
+    font-weight: 400; }
+.home .plane-wrapper {
   left: 50%;
   margin-left: -245px;
+  margin-top: 50px;
   position: absolute; }
-
-#plane {
+.home #plane {
   -webkit-animation: animatePlane linear 5s infinite;
   -moz-animation: animatePlane linear 5s infinite;
   -o-animation: animatePlane linear 5s infinite;
@@ -415,7 +431,7 @@ h1, h2, h3, h4 {
   -webkit-transform-origin: 50% 50%;
   -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%; }
-  #plane #propellers {
+  .home #plane #propellers {
     -webkit-animation: spinPropellers linear 0.1s infinite;
     -moz-animation: spinPropellers linear 0.1s infinite;
     -o-animation: spinPropellers linear 0.1s infinite;
@@ -424,6 +440,27 @@ h1, h2, h3, h4 {
     -webkit-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%; }
+.home .clouds-wrapper {
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%; }
+  .home .clouds-wrapper .clouds {
+    background-size: 1200px;
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    width: 100vw; }
+    .home .clouds-wrapper .clouds.white {
+      background-image: url("/explore-it/img/white_clouds.png"); }
+    .home .clouds-wrapper .clouds.lighter {
+      background-image: url("/explore-it/img/lighter_clouds.png"); }
 
 .box1 {
   background: #999999;
