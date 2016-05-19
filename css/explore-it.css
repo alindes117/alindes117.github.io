@@ -444,23 +444,29 @@ h1, h2, h3, h4 {
   bottom: 0;
   height: 100vh;
   left: 0;
+  overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
   width: 100%; }
   .home .clouds-wrapper .clouds {
-    background-size: 1200px;
+    background-size: 2200px;
     background-repeat: repeat-x;
-    background-position: center bottom;
     bottom: 0;
     height: 100vh;
     left: 0;
     position: absolute;
     width: 100vw; }
     .home .clouds-wrapper .clouds.white {
-      background-image: url("/explore-it/img/white_clouds.png"); }
+      background-image: url("/explore-it/img/white_clouds.png");
+      background-position: center bottom;
+      bottom: -225px;
+      z-index: 2; }
     .home .clouds-wrapper .clouds.lighter {
-      background-image: url("/explore-it/img/lighter_clouds.png"); }
+      background-image: url("/explore-it/img/lighter_clouds.png");
+      background-position: 25% bottom;
+      bottom: -175px;
+      z-index: 1; }
 
 .box1 {
   background: #999999;
