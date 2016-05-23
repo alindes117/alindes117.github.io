@@ -729,3 +729,7 @@ body.active .clouds-wrapper .clouds {
       margin-top: 35px;
       padding-left: 20px;
       width: 100%; } }
+@media (max-width: 480px) {
+  .home .plane-wrapper #plane {
+    max-width: 325px;
+    width: 80%; } }
