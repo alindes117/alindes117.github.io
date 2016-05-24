@@ -632,7 +632,7 @@ h1, h2, h3, h4 {
     line-height: 45px; }
 .try .row {
   display: table;
-  height: 500px;
+  min-height: 500px;
   width: 100%; }
 .try .col {
   display: table-cell;
@@ -661,7 +661,7 @@ h1, h2, h3, h4 {
     .try .controls .control.control1 {
       left: 0;
       position: absolute;
-      top: 85px;
+      top: 24%;
       z-index: 1; }
     .try .controls .control.control2 {
       top: -25px;
@@ -693,6 +693,8 @@ h1, h2, h3, h4 {
         left: 0; }
       .try .controls .touch-wrapper .touch-input:last-child {
         right: 0; }
+.try .go-back {
+  margin-top: 50px; }
 
 body.active .container {
   opacity: 1; }
@@ -762,6 +764,8 @@ body.active .clouds-wrapper .clouds {
       padding-left: 20px;
       width: 100%; }
 
+  .try .row {
+    display: block; }
   .try .col {
     display: block;
     padding: 0px 20px; }
@@ -781,8 +785,22 @@ body.active .clouds-wrapper .clouds {
       .try .col.descr .page-title {
         display: none; }
   .try .controls {
-    border-left: 0px; } }
+    border-left: 0px; }
+  .try .go-back {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    text-align: center; } }
 @media (max-width: 480px) {
   .home .plane-wrapper #plane {
     max-width: 325px;
-    width: 80%; } }
+    width: 80%; }
+
+  .try .controls .control {
+    max-width: 100%; }
+  .try .controls .touch-wrapper {
+    bottom: auto;
+    top: -35px; }
+  .try .col.image img {
+    max-width: 100%; }
+  .try .col.descr {
+    padding: 0px; } }
