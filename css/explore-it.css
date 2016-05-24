@@ -800,6 +800,8 @@ body.active .clouds-wrapper .clouds {
   .try .controls .touch-wrapper {
     bottom: auto;
     top: -35px; }
+  .try .controls-inner {
+    max-width: 80%; }
   .try .col.image img {
     max-width: 100%; }
   .try .col.descr {
