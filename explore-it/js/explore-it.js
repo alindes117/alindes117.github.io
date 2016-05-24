@@ -36,15 +36,12 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-    changeHeight();
+    if($('body').hasClass('lessons') || $('body').hasClass('intro')) {
+        changeHeight();
+    }
 });
 
 function changeHeight() {
-    var wwidth = $(window).width();
-    if(wwidth <= 768) {
-        var height = $('.content .container').height();
-    } else {
-        var height = $('.content .container').height() + 250;
-    }
+    var height = $('.content .container').height() + 250;
     $('.wrapper').css('min-height', height);
 }
