@@ -767,11 +767,14 @@ body.active .clouds-wrapper .clouds {
     padding: 0px 20px; }
     .try .col.image {
       margin: 35px auto;
-      padding: 50px 0px 100px 0px;
+      padding: 0px 20px;
+      text-align: center;
       width: 100%; }
       .try .col.image .page-title {
         display: block;
-        margin-bottom: 150px; }
+        margin-bottom: 120px; }
+      .try .col.image img {
+        max-width: 350px; }
     .try .col.descr {
       padding-left: 0px;
       width: 100%; }

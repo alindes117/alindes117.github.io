@@ -40,6 +40,11 @@ $(window).resize(function() {
 });
 
 function changeHeight() {
-    var height = $('.content .container').height() + 250;
+    var wwidth = $(window).width();
+    if(wwidth <= 768) {
+        var height = $('.content .container').height();
+    } else {
+        var height = $('.content .container').height() + 250;
+    }
     $('.wrapper').css('min-height', height);
 }
