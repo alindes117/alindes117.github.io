@@ -7,7 +7,7 @@ $(document).ready(function() {
         setTimeout(function() {
             $('.content .inner').attr('style', '');
         }, 2000);
-    } else if($('body').hasClass('lessons')) {
+    } else if($('body').hasClass('lessons') || $('body').hasClass('intro')) {
         changeHeight();
     } else if($('body').attr('class') == "roll try") {
         $('.touch-input').on('drag', function(e) {
