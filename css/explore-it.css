@@ -617,6 +617,8 @@ h1, h2, h3, h4 {
   line-height: 25px; }
 .lessons .content {
   z-index: 999; }
+.lessons .info {
+  margin-top: 35px; }
 .lessons .row {
   display: table; }
 .lessons .col {
@@ -658,49 +660,91 @@ h1, h2, h3, h4 {
 .try .controls {
   border-left: 1px solid #a9e4ff;
   position: relative; }
-  .try .controls .controls-inner {
-    margin: 50px auto 0 auto;
-    position: relative;
-    max-width: 400px; }
-  .try .controls .control {
-    max-width: 100%;
-    position: relative;
-    width: 400px; }
-    .try .controls .control.control1 {
-      left: 0;
-      position: absolute;
-      top: 24%;
-      z-index: 1; }
-    .try .controls .control.control2 {
-      top: -25px;
-      -webkit-transform-origin: 50% 53%;
-      -ms-transform-origin: 50% 53%;
-      transform-origin: 50% 53%;
-      z-index: 2; }
-  .try .controls .touch-wrapper {
+.try .touch-wrapper {
+  bottom: 0;
+  height: 400px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3; }
+  .try .touch-wrapper .touch-input {
     bottom: 0;
-    height: 400px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    width: 50%; }
+    .try .touch-wrapper .touch-input:first-child {
+      left: 0; }
+    .try .touch-wrapper .touch-input:last-child {
+      right: 0; }
+.try.roll .controls .controls-inner {
+  margin: 50px auto 0 auto;
+  position: relative;
+  max-width: 400px; }
+.try.roll .controls .control {
+  max-width: 100%;
+  position: relative;
+  width: 400px; }
+  .try.roll .controls .control.control1 {
     left: 0;
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    z-index: 3; }
-    .try .controls .touch-wrapper .touch-input {
-      bottom: 0;
-      height: 100%;
+    top: 24%;
+    z-index: 1; }
+  .try.roll .controls .control.control2 {
+    top: -25px;
+    -webkit-transform-origin: 50% 53%;
+    -ms-transform-origin: 50% 53%;
+    transform-origin: 50% 53%;
+    z-index: 2; }
+.try.yaw .images {
+  background: #ffffff;
+  display: inline-block;
+  margin: 35px 0px;
+  padding: 25px 17px;
+  position: relative; }
+  .try.yaw .images .image {
+    max-width: 150px; }
+    .try.yaw .images .image.pedal1 {
+      position: relative;
+      z-index: 2; }
+    .try.yaw .images .image.pedal2 {
+      left: 26px;
       position: absolute;
-      top: 0;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      -o-user-select: none;
-      user-select: none;
-      width: 50%; }
-      .try .controls .touch-wrapper .touch-input:first-child {
-        left: 0; }
-      .try .controls .touch-wrapper .touch-input:last-child {
-        right: 0; }
+      top: 22px;
+      z-index: 1; }
+.try.yaw .controls {
+  padding: 100px 0px; }
+  .try.yaw .controls .touch-wrapper {
+    height: 100%; }
+.try.yaw .control {
+  display: inline-block;
+  float: left;
+  position: relative;
+  text-align: center;
+  width: 50%; }
+  .try.yaw .control img {
+    max-width: 80%;
+    -webkit-transform-origin: 80% 97%;
+    -ms-transform-origin: 80% 97%;
+    transform-origin: 80% 97%; }
+  .try.yaw .control span {
+    display: block;
+    font-weight: 700;
+    margin-top: 15px;
+    text-align: center; }
+  .try.yaw .control.control1 {
+    padding-right: 15px;
+    text-align: right; }
+  .try.yaw .control.control2 {
+    padding-left: 15px;
+    text-align: left; }
 .try .go-back {
   margin-top: 50px; }
 
@@ -794,6 +838,30 @@ body.active .clouds-wrapper .clouds {
         display: none; }
   .try .controls {
     border-left: 0px; }
+  .try.yaw .col.image {
+    margin: 0 auto 50px auto; }
+    .try.yaw .col.image .page-title {
+      margin-bottom: 35px; }
+  .try.yaw .controls {
+    padding: 20px 0px; }
+    .try.yaw .controls .controls-inner {
+      max-width: 100%; }
+  .try.yaw .control {
+    display: inline-block;
+    float: left;
+    position: relative;
+    text-align: center;
+    width: 50%; }
+    .try.yaw .control img {
+      max-width: 80%;
+      -webkit-transform-origin: 80% 97%;
+      -ms-transform-origin: 80% 97%;
+      transform-origin: 80% 97%; }
+    .try.yaw .control span {
+      display: block;
+      font-weight: 700;
+      margin-top: 15px;
+      text-align: center; }
   .try .go-back {
     margin-top: 100px;
     padding-bottom: 50px;

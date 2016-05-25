@@ -32,6 +32,48 @@ $(document).ready(function() {
                 }
             }
         });
+    } else if($('body').attr('class') == "yaw try") {
+        $('.touch-input').on('drag', function(e) {
+            e.preventDefault();
+            if(e.end) {
+                $('.control img, #plane').css({
+                    '-webkit-transition': 'transform 0.5s',
+                    '-webkit-transform': 'rotate(0deg)',
+                    'transform': 'rotate(0deg)'
+                });
+            } else {
+                console.log(e.dy);
+                if(e.dy > 0) {
+                    var deg = e.dy/2;
+                    
+                    if(deg < 40) {
+
+                        if($(this).hasClass('touch-left')) {
+                            deg *= -1;
+                            $('.control1 img, #plane').css({
+                                '-webkit-transition': 'transform 0s',
+                                '-webkit-transform': 'rotate(' + deg + 'deg)',
+                                'transform': 'rotate(' + deg + 'deg)'
+                            });   
+                        }
+
+                        if($(this).hasClass('touch-right')) {
+                            $('#plane').css({
+                                '-webkit-transition': 'transform 0s',
+                                '-webkit-transform': 'rotate(' + deg + 'deg)',
+                                'transform': 'rotate(' + deg + 'deg)'
+                            });
+                            deg *= -1;
+                            $('.control2 img').css({
+                                '-webkit-transition': 'transform 0s',
+                                '-webkit-transform': 'rotate(' + deg + 'deg)',
+                                'transform': 'rotate(' + deg + 'deg)'
+                            });   
+                        }
+                    }
+                }
+            }
+        });
     }
 });
 
