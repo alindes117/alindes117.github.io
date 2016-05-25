@@ -871,14 +871,14 @@ body.active .clouds-wrapper .clouds {
     max-width: 325px;
     width: 80%; }
 
-  .try .controls .control {
+  .try.roll .controls .control {
     max-width: 100%; }
-  .try .controls .touch-wrapper {
+  .try.roll .controls .touch-wrapper {
     bottom: auto;
     top: -35px; }
-  .try .controls .controls-inner {
+  .try.roll .controls .controls-inner {
     max-width: 80%; }
-  .try .col.image img {
+  .try.roll .col.image img {
     max-width: 100%; }
-  .try .col.descr {
+  .try.roll .col.descr {
     padding: 0px; } }
