@@ -565,6 +565,9 @@ h1, h2, h3, h4 {
   transition: opacity 0.5s;
   z-index: 999; }
 
+.intro .wrapper {
+  height: 100vh;
+  position: relative; }
 .intro .content {
   padding-top: 100px; }
 .intro .col {
