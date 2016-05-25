@@ -87,7 +87,7 @@ $(document).ready(function() {
                 console.log(e.dx);
                 var deg = e.dx/3;
                     
-                if(Math.abs(deg) < 30) {
+                if(Math.abs(deg) < 40) {
                     $('.control1, #plane').css({
                         '-webkit-transition': 'transform 0s',
                         '-webkit-transform': 'rotate(' + deg + 'deg)',
