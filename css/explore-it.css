@@ -451,6 +451,7 @@ h1, h2, h3, h4 {
 .home .wrapper {
   height: 100vh;
   min-height: 750px;
+  position: relative;
   text-align: center;
   width: 100vw; }
 .home .inner {
