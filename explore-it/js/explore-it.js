@@ -74,6 +74,28 @@ $(document).ready(function() {
                 }
             }
         });
+    } else if($('body').attr('class') == "pitch try") {
+        $('.touch-input').on('drag', function(e) {
+            e.preventDefault();
+            if(e.end) {
+                $('.control1, #plane').css({
+                    '-webkit-transition': 'transform 0.5s',
+                    '-webkit-transform': 'rotate(0deg)',
+                    'transform': 'rotate(0deg)'
+                });
+            } else {
+                console.log(e.dx);
+                var deg = e.dx/3;
+                    
+                if(Math.abs(deg) < 30) {
+                    $('.control1, #plane').css({
+                        '-webkit-transition': 'transform 0s',
+                        '-webkit-transform': 'rotate(' + deg + 'deg)',
+                        'transform': 'rotate(' + deg + 'deg)'
+                    });
+                }
+            }
+        });
     }
 });
 

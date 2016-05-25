@@ -684,6 +684,8 @@ h1, h2, h3, h4 {
       left: 0; }
     .try .touch-wrapper .touch-input:last-child {
       right: 0; }
+    .try .touch-wrapper .touch-input.full-width {
+      width: 100%; }
 .try.roll .controls .controls-inner {
   margin: 50px auto 0 auto;
   position: relative;
@@ -745,6 +747,18 @@ h1, h2, h3, h4 {
   .try.yaw .control.control2 {
     padding-left: 15px;
     text-align: left; }
+.try.pitch .controls {
+  padding: 75px 0px;
+  text-align: center; }
+  .try.pitch .controls .controls-inner {
+    position: relative; }
+  .try.pitch .controls .touch-wrapper {
+    height: 100%; }
+  .try.pitch .controls .control {
+    max-width: 80%;
+    -webkit-transform-origin: 40% 91%;
+    -ms-transform-origin: 40% 91%;
+    transform-origin: 40% 91%; }
 .try .go-back {
   margin-top: 50px; }
 
