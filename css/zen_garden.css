@@ -464,24 +464,31 @@ p {
 #zen-supporting #zen-explanation,
 #zen-supporting #zen-participation {
   float: left;
-  left: 50%;
-  margin-left: -600px;
   margin-top: 500px;
-  max-width: 600px;
+  padding: 0px 30px;
   position: relative;
   width: 50%; }
-#zen-supporting #zen-explanation {
-  padding-right: 15px; }
+  #zen-supporting #zen-explanation h3, #zen-supporting #zen-explanation p,
+  #zen-supporting #zen-participation h3,
+  #zen-supporting #zen-participation p {
+    margin: 0 0 0 auto;
+    max-width: 600px; }
+  #zen-supporting #zen-explanation p,
+  #zen-supporting #zen-participation p {
+    margin: 10px 0 10px auto; }
 #zen-supporting #zen-participation {
-  margin-left: 0px;
-  padding-left: 15px; }
+  margin-left: 0px; }
+  #zen-supporting #zen-participation h3, #zen-supporting #zen-participation p {
+    margin: 0 auto 0 0; }
+  #zen-supporting #zen-participation p {
+    margin: 10px auto 10px 0; }
 #zen-supporting #zen-benefits {
   background: #125995;
   clear: both;
   color: #ffffff;
   float: left;
   margin-top: 75px;
-  padding: 75px 0px;
+  padding: 75px 30px;
   position: relative;
   width: 100%; }
   #zen-supporting #zen-benefits:before {
@@ -499,7 +506,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 400px 0px 75px 0px;
+  padding: 400px 30px 75px 30px;
   position: relative; }
   #zen-requirements:before {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
@@ -558,3 +565,31 @@ footer {
   .sidebar a:hover {
     color: #444444;
     text-decoration: none; }
+
+@media (max-width: 991px) {
+  #zen-intro #zen-preamble {
+    background: none;
+    margin: 65px 0px 0px 0px;
+    padding: 50px 30px; } }
+@media (max-width: 768px) {
+  #zen-intro header {
+    padding: 300px 30px 125px 30px; }
+  #zen-intro #zen-summary {
+    padding: 0px 30px; }
+
+  #zen-supporting #zen-explanation,
+  #zen-supporting #zen-participation {
+    float: none;
+    margin-top: 0px;
+    width: 100%; }
+    #zen-supporting #zen-explanation h3, #zen-supporting #zen-explanation p,
+    #zen-supporting #zen-participation h3,
+    #zen-supporting #zen-participation p {
+      margin: 0 auto;
+      max-width: 100%; }
+    #zen-supporting #zen-explanation p,
+    #zen-supporting #zen-participation p {
+      margin: 10px auto; }
+  #zen-supporting #zen-explanation {
+    float: left;
+    margin-top: 430px; } }
